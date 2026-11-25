@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk dan Harga - Kopi Sembalun</title>
+  <link rel="stylesheet" href="produk.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="produk.html" class="nama-brand">Kopi Sembalun</a>
+    <div class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="saran.html">Saran dan Masukan</a>
+      <a href="ulasan.html">Ulasan</a>
+      <a href="pemesanan.html">Pemesanan</a>
+    </div>
+  </nav>
+
+  <h1 id="judul">Menu dan Harga Kopi Seduh</h1>
+
+  <p class="keterangan">Minuman siap nikmat dengan banyak varian! Diskon 20% untuk Es Kopi Rinjani.</p>
+
+  <h2>Produk Terlaris</h2>
+
+  <div class="produk">
+    <img src="KOPI GULA AREN.jpg" alt="Kopi Susu Gula Aren">
+    <h3>Kopi Susu Gula Aren</h3>
+    <p>Espresso dari Kopi Campuran Rumahan, susu segar, dan gula aren.</p>
+    <p class="harga">Rp15.000</p>
+  </div>
+
+  <div class="produk">
+    <img src="KOPI TUBRUK.jpg" alt="Kopi Tubruk Sembalun">
+    <h3>Kopi Tubruk Sembalun</h3>
+    <p>Kopi Robusta khas Lombok.</p>
+    <p class="harga">Rp10.000</p>
+  </div>
+
+  <h2>Semua Menu</h2>
+
+  <div class="produk">
+    <img src="KOPI RINJANI.jpg" alt="Es Kopi Rinjani">
+    <h3>Es Kopi Rinjani</h3>
+    <p>Kopi Robusta Lombok dengan susu segar dan es batu.</p>
+    <p class="harga"><s>Rp14.000</s> Rp11.200 (diskon 20%)</p>
+  </div>
+
+  <div class="produk">
+    <img src="AMERICANO COFFEE.jpg" alt="Americano">
+    <h3>Americano</h3>
+    <p>Espresso dari biji Arabika Sembalun dengan air, ringan dan bersih.</p>
+    <p class="harga">Rp13.000</p>
+  </div>
+
+  <div class="produk">
+    <img src="LATTE.jpg" alt="Cafe Latte">
+    <h3>Coffee Latte</h3>
+    <p>Espresso dari biji Arabika Sembalun dengan susu steam yang creamy.</p>
+    <p class="harga">Rp18.000</p>
+  </div>
+
+  <div class="produk">
+    <img src="KOPI COKLAT PANAS.jpg" alt="Kopi Coklat Panas">
+    <h3>Kopi Coklat Panas</h3>
+    <p>Perpaduan Kopi Campuran Rumahan dan coklat panas.</p>
+    <p class="harga"><s>Rp17.000</s> Rp13.600 (diskon 20%)</p>
+  </div>
+
+  <h2>Hitung Total Belanja</h2>
+
+  <div class="kalkulator">
+    <label>Pilih menu:</label>
+    <select id="pilih-menu"></select>
+
+    <label>Jumlah:</label>
+    <input type="number" id="jumlah" value="1" min="1">
+
+    <button class="tombol" onclick="hitungTotal()">Hitung total</button>
+
+    <p id="hasil-total"></p>
+  </div>
+  
+  <a class="tombol" href="kontak.html">Cara Memesan</a>
+
+  <script src="produk.js"></script>
+
+</body>
+</html>
