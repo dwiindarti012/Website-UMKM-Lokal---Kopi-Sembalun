@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Ulasan Produk - Kopi Sembalun</title>
+    <link rel="stylesheet" href="produk.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="produk.html" class="nama-brand">Kopi Sembalun</a>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="produk.html">Produk</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="saran.html">Saran dan Masukan</a>
+            <a href="ulasan.html">Ulasan</a>
+            <a href="pemesanan.html">Pemesanan</a>
+        </div>
+    </nav>
+
+    <h1 class="header">Formulir Ulasan Produk Kopi Sembalun</h1>
+
+    <form id="form-ulasan" novalidate>
+        <label>Nama:</label>
+        <input type="text" id="nama" placeholder="Isi nama" name="nama" required/>
+        <br/>
+
+        <label>Produk yang dibeli:</label>
+        <select name="produk" id="produk" required>
+            <option value="">-- Pilih Produk --</option>
+            <option>Kopi Susu Gula Aren</option>
+            <option>Kopi Tubruk Sembalun</option>
+            <option>Es Kopi Rinjani</option>
+            <option>Americano</option>
+            <option>Coffee Latte</option>
+            <option>Kopi Coklat Panas</option>
+        </select>
+        <br/>
+
+        <label>Rating:</label>
+        <input type="radio" name="rating" value="1" required/> 1
+        <input type="radio" name="rating" value="2"/> 2
+        <input type="radio" name="rating" value="3"/> 3
+        <input type="radio" name="rating" value="4"/> 4
+        <input type="radio" name="rating" value="5"/> 5
+        <br/>
+
+        <label>Foto Produk (opsional):</label>
+        <input type="file" name="foto" accept="image/*"/>
+        <br/>
+
+        <label>Komentar:</label>
+        <textarea rows="4" id="komentar" name="komentar" placeholder="Tulis ulasanmu" required></textarea>
+        <br/><br/>
+
+        <button type="submit" class="submit">Kirim Ulasan</button>
+    </form>
+
+    <script src="ulasan.js"></script>
+</body>
+</html>
