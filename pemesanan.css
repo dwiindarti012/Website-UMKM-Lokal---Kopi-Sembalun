@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, serif;
+  color: #333333;
+  background-color: #333333;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20px;
+  z-index: -1;
+  filter: blur(4px);
+  background: white;
+}
+
+.navbar {
+  background-color: #1F4D3A;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px;            
+}
+
+.nama-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nama-brand:visited {
+  color: white;
+}
+
+.nama-brand:hover {
+  color: #f5c16c;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .menu a:visited {
+  color: white;
+}
+
+.navbar .menu a:hover {
+  color: #f5c16c;
+}
+
+.hero {
+  text-align: center;
+  padding: 70px 6% 40px;
+  color: #333333;
+}
+
+.hero h1 {
+  font-size: 4.8rem;
+  letter-spacing: 4px;
+}
+
+.established {
+  display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #E0A526;
+  border-bottom: 3px solid #E0A526;
+}
+
+.menu {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 6% 40px;
+}
+
+.kartu {
+  background-color: #ffffff;
+  border-top: 5px solid #E0A526;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: #333333;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid #E0A526;
+  outline-offset: 1px;
+}
+
+/* Unggah file: input asli disembunyikan, diganti tombol ber-ikon */
+.input-file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.nama-file {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.9rem;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.petunjuk {
+  font-size: 0.85rem;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.tombol {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E0A526;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.tombol:hover {
+  background-color: #c88f1d;
+}
+
+.tombol:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 2px;
+}
+
+form .tombol {
+  width: 100%;
+}
+
+.tombol-upload {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+}
+
+.input-file:focus-visible + .upload .tombol-upload {
+  outline: 3px solid #333333;
+  outline-offset: 2px;
+}
+
+.tombol-wa {
+  display: block;
+}
+
+.atau {
+  margin: 20px 0 8px;
+}
+
+.nav-halaman {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.nav-halaman a {
+  color: #1F4D3A;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-halaman a:hover,
+.nav-halaman a:active {
+  color: #E0A526;
+  border-bottom-color: #E0A526;
+}
+
+.nav-halaman a.aktif {
+  color: #1F4D3A;
+  border-bottom-color: #1F4D3A;
+}
+
+.nav-halaman a.aktif:hover,
+.nav-halaman a.aktif:active {
+  color: #E0A526;
+  border-bottom-color: #E0A526;
+}
+
+.langkah {
+  padding-left: 20px;
+}
+
+.alamat-kartu {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.tombol-peta {
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+}
+
+.ikon {
+  vertical-align: -3px;
+  margin-right: 6px;
+}
+ 
+.address {
+  font-style: normal;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px 30px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .menu {
+    padding: 0 20px 30px;
+  }
+
+  .kartu {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navbar .menu {
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+  }
+}
