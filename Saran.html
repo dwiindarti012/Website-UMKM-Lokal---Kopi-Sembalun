@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saran dan Masukan - Kopi Sembalun</title>
+  <link rel="stylesheet" href="beranda.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nama-brand">Kopi Sembalun</a>
+    <div class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="saran.html">Saran dan Masukan</a>
+      <a href="ulasan.html">Ulasan</a>
+      <a href="pemesanan.html">Pemesanan</a>
+    </div>
+  </nav>
+  
+  <section>
+    <h2>Saran dan masukan</h2>
+    <p>Silakan tulis saran atau masukan Anda untuk Kopi Sembalun.</p>
+
+    <form>
+      <p>
+        <label for="nama">Nama:</label><br />
+        <input type="text" id="nama" name="nama" required />
+      </p>
+
+      <p>
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <p>
+        <label for="penilaian">Penilaian:</label><br />
+        <select id="penilaian" name="penilaian">
+          <option value="5">5 - Sangat baik</option>
+          <option value="4">4 - Baik</option>
+          <option value="3">3 - Cukup</option>
+          <option value="2">2 - Kurang</option>
+          <option value="1">1 - Sangat kurang</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="pesan">Saran dan masukan:</label><br />
+        <textarea id="pesan" name="pesan" rows="5" cols="40" required></textarea>
+      </p>
+
+      <button class="tombol" type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <section id="halamanHasil">
+    <div class="kartu">
+      <h2 class="judul-hijau">Terima Kasih!</h2>
+      <p>Saran dan masukan kamu berhasil dikirim.</p>
+
+      <h3 class="sub-judul">Detail Saran</h3>
+      <p>Nama: <span id="hNama"></span></p>
+      <p>Email: <span id="hEmail"></span></p>
+      <p>Penilaian: <span id="hNilai"></span></p>
+      <p>Saran dan masukan:</p>
+      <p id="hPesan"></p>
+
+      <button class="tombol" id="tombolKembali" onclick="location.reload()">Kembali ke Formulir</button>
+    </div>
+  </section>
+
+  <script src="saran.js"></script>
+</body>
+</html>
