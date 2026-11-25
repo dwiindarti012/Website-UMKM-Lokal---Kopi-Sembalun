@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px 6%;
+}
+
+.navbar {
+  background-color: #1F4D3A;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -20px -6% 20px;
+}
+
+.nama-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nama-brand:visited {
+  color: white;
+}
+
+.nama-brand:hover {
+  color: #f5c16c;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:visited {
+  color: white;
+}
+
+.menu a:hover {
+  color: #f5c16c;
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+}
+
+h2 {
+  color: #1F4D3A;
+  border-bottom: 2px solid #1F4D3A;
+}
+
+.header {
+  border-bottom: 4px solid #E0A526;
+  padding-bottom: 10px;
+}
+
+.keterangan {
+  background-color: #E0A526;
+  color: #333333;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.produk {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+.produk img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.harga {
+  color: #1F4D3A;
+  font-weight: bold;
+}
+
+.kalkulator {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.kalkulator label {
+  display: block;
+  color: #1F4D3A;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.kalkulator select,
+.kalkulator input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.tombol {
+  display: inline-block;
+  background-color: #c88f1d;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.tombol:hover,
+.submit:hover {
+  background-color: #c88f1d;
+}
+
+#hasil-total {
+  background-color: #1F4D3A;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+form {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  color: #1F4D3A;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.submit {
+  background-color: #c88f1d;
+  color: #333333;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* HALAMAN HASIL ULASAN */
+.hasil-ulasan {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 500px;
+}
+
+.hasil-ulasan h1,
+.hasil-ulasan h2 {
+  color: #1F4D3A;
+}
+
+.hasil-ulasan h2 {
+  border-bottom: 2px solid #E0A526;
+}
+
+.tombol-kembali {
+  display: inline-block;
+  background-color: #1F4D3A;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tombol-kembali:hover {
+  background-color: #E0A526;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .produk {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  form,
+  .hasil-ulasan {
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 15px;
+  }
+}
