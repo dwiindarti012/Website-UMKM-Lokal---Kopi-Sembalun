@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Ulasan - Kopi Sembalun</title>
+    <link rel="stylesheet" href="produk.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="produk.html" class="nama-brand">Kopi Sembalun</a>
+    </nav>
+
+    <div class="hasil-ulasan">
+        <h1>Terima Kasih!</h1>
+        <p>Ulasan kamu berhasil dikirim.</p>
+
+        <h2>Detail Ulasan</h2>
+
+        <p>Nama: <span id="hasil-nama"></span></p>
+        <p>Produk: <span id="hasil-produk"></span></p>
+        <p>Rating: <span id="hasil-rating"></span></p>
+        <p>Foto: <span id="hasil-foto"></span></p>
+
+        <p>Komentar:</p>
+        <p id="hasil-komentar"></p>
+
+        <a href="ulasan.html" class="tombol-kembali">Kembali ke Formulir</a>
+    </div>
+
+    <script>
+        const rating = sessionStorage.getItem("rating");
+
+        document.getElementById("hasil-nama").textContent = sessionStorage.getItem("nama");
+        document.getElementById("hasil-produk").textContent = sessionStorage.getItem("produk");
+        document.getElementById("hasil-rating").textContent = "★".repeat(Number(rating)) + " (" + rating + " / 5)";
+        document.getElementById("hasil-foto").textContent = sessionStorage.getItem("foto");
+        document.getElementById("hasil-komentar").textContent = sessionStorage.getItem("komentar");
+    </script>
+</body>
+</html>
